@@ -45,10 +45,10 @@ header nav ul li a:hover {
     color: #ddd;
 }
 
-/* Carrossel */
+
 .carousel {
-    width: 2000px; 
-    height: 600px; 
+    width: 1600px; 
+    height: 400px; 
     overflow: hidden;
     margin: 20px auto;
     position: relative;
