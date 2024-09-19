@@ -13,8 +13,8 @@ const slidesToShow = 3; // Número de slides a serem exibidos de uma vez
 
 // Função para mostrar o próximo slide
 function showNextSlide() {
-    // Incrementa o índice currentIndex e garante que ele volte para 0 ao atingir o número total de slides
-    currentIndex = (currentIndex + 1) % (totalSlides - slidesToShow + 1);
+    // Incrementa o índice currentIndex, garantindo que ele não ultrapasse o número de slides disponíveis
+    currentIndex = (currentIndex + 1) % Math.ceil(totalSlides / slidesToShow);
 
     // Move o container de slides para a esquerda, baseando-se no índice atual
     slides.style.transform = `translateX(-${currentIndex * slideWidth}px)`; // Mova slideWidth por índice
